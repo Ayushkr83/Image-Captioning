@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: aqua;
+}
+h1 {
+    color: #333;
+}
+img {
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.caption {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e90e0e;
+}

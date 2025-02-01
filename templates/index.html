@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning with BLIP</title>
+    <link rel="stylesheet" href="static\style.css">
+    
+</head>
+<body class = "content">
+    <h1>Image Captioning with BLIP</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Generate Caption</button>
+    </form>
+
+    {% if caption %}
+    <div class="caption">
+        <h2>Generated Caption:</h2>
+        <p>{{ caption }}</p>
+    </div>
+    {% endif %}
+
+    {% if image_filename %}
+    <div class="image">
+        <h2>Uploaded Image:</h2>
+        <img src="{{ url_for('uploaded_file', filename=image_filename) }}" alt="Uploaded Image">
+    </div>
+    {% endif %}
+</body>
+</html>
