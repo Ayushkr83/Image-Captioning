@@ -2,11 +2,15 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 50px;
-    background-color: aqua;
+    background-color: bisque;
 }
 h1 {
     color: #333;
 }
+h2 {
+    color:black;
+}
+
 img {
     max-width: 500px;
     height: auto;
@@ -17,5 +21,5 @@ img {
 .caption {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #e90e0e;
+    color: blue;
 }
